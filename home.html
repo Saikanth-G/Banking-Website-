@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Easybank</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -14,6 +17,7 @@
             <ul>
                 <li><a href="home.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="careers.html">Careers</a></li>
@@ -28,23 +32,76 @@
         <button class="btn-register" id="registerBtnHeader">Register Now</button>
     </section>
 
+    <section class="features-section">
+        <h2>Why Choose Easybank?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Fast Transfers</h3>
+                <p>Experience lightning-fast bank transfers and manage your finances with ease.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Platform</h3>
+                <p>We prioritize your safety with top-notch security protocols.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Our customer service team is available around the clock to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <blockquote>
+                <p>"Easybank has completely transformed how I handle my finances. Highly recommend!"</p>
+                <footer>- Alex M.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"The 24/7 customer support is fantastic. I always feel secure and well-informed."</p>
+                <footer>- Jamie L.</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="blog-preview-section">
+        <h2>Latest from Our Blog</h2>
+        <div class="blog-posts">
+            <article>
+                <h3><a href="blog1.html">Top 5 Tips for Managing Your Savings</a></h3>
+                <p>Discover simple, effective strategies to grow your savings and achieve financial stability.</p>
+            </article>
+            <article>
+                <h3><a href="blog2.html">How Easybank Keeps Your Data Secure</a></h3>
+                <p>Learn about the latest technologies we use to ensure your information stays private.</p>
+            </article>
+        </div>
+    </section>
+
     <!-- Modal Structure -->
     <div id="registerModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
+            <p id="AlertMessage">Registration Complete</p>
             <h2>Sign Up</h2>
             <form id="registerForm">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit" class="form-button">Register</button>
+                <input id="email" type="email" placeholder="Email" required>
+                <input id="password" type="password" placeholder="Password" required>
+                <button id="submit" type="submit" class="form-button">Register</button>
             </form>
         </div>
     </div>
-      
+
     <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="faq.html">FAQ</a>
+        </div>
         <p>© 2024 Easybank. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
